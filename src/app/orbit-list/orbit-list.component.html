@@ -10,7 +10,7 @@
     <!-- TODO 2a: add *ngFor to loop over satellites -->
     <tr *ngFor="let item of satellites" class="data-row">
         <td>{{item.name}}</td>
-        <td>{{item.type}}</td>
+        <td [class.warning]="item.isSpaceDebris()">{{item.type}}</td>
         <td>{{item.operational}}</td>
         <td>{{item.orbitType}}</td>
         <td>{{item.launchDate}}</td>
