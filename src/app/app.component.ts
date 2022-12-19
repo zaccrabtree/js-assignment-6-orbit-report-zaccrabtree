@@ -34,7 +34,7 @@ export class AppComponent {
 	  
 			}.bind(this));
 		}.bind(this));
-
+		console.log(this.displayList)
 	}
 
 	search(searchTerm: string): void {
